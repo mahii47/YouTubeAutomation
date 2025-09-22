@@ -1,10 +1,9 @@
 pipeline {
     agent any
 
-    environment {
-        MAVEN_HOME = tool name: 'Maven 3.9.3', type: 'maven'
-        JAVA_HOME = tool name: 'JDK 11', type: 'jdk'
-        PATH = "${MAVEN_HOME}/bin:${JAVA_HOME}/bin:${env.PATH}"
+    tools {
+        maven 'Maven'    // Make sure Maven is configured in Jenkins
+        jdk 'JDK11'      // Make sure JDK11 is configured in Jenkins
     }
 
     stages {
@@ -14,31 +13,39 @@ pipeline {
             }
         }
 
-        stage('Build & Test') {
+        stage('Build') {
             steps {
-                sh 'mvn clean test'
+                sh 'mvn clean install -DskipTests'
             }
         }
 
-        stage('Archive Artifacts') {
+        stage('Run Tests') {
             steps {
-                // Archive XML and HTML reports, don't fail if empty
-                archiveArtifacts artifacts: '**/target/surefire-reports/*.xml', allowEmptyArchive: true
-                archiveArtifacts artifacts: '**/target/cucumber-reports/*.html', allowEmptyArchive: true
+                sh 'mvn test'
+            }
+        }
+
+        stage('Archive Reports') {
+            steps {
+                archiveArtifacts artifacts: 'target/surefire-reports/*.xml', allowEmptyArchive: true
+                archiveArtifacts artifacts: 'target/cucumber-reports/*.html', allowEmptyArchive: true
+                junit 'target/surefire-reports/*.xml'
             }
         }
     }
 
     post {
         always {
-            echo 'Cleaning up workspace...'
+            echo "Cleaning up workspace..."
             cleanWs()
         }
-        failure {
-            echo 'Build or tests failed!'
-        }
+
         success {
-            echo 'Build and tests completed successfully!'
+            echo "Build and Tests Passed!"
+        }
+
+        failure {
+            echo "Build or Tests Failed!"
         }
     }
 }

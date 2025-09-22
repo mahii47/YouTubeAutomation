@@ -2,24 +2,24 @@ pipeline {
     agent any
 
     tools {
-        jdk 'JDK11'        // Your Jenkins JDK installation
-        maven 'Maven'      // Your Jenkins Maven installation
+        jdk 'JDK11'        // your Jenkins JDK tool name
+        maven 'Maven3'     // your Jenkins Maven tool name
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/mahii47/YouTubeAutomation.git'
+                git url: 'https://github.com/mahii47/YouTubeAutomation', branch: 'main'
             }
         }
 
         stage('Build') {
             steps {
-                sh 'mvn clean install -DskipTests'
+                sh 'mvn clean compile -DskipTests'
             }
         }
 
-        stage('Run Tests') {
+        stage('Run Cucumber Tests') {
             steps {
                 sh 'mvn test'
             }
@@ -28,7 +28,7 @@ pipeline {
 
     post {
         always {
-            echo "Pipeline finished."
+            echo 'Pipeline finished.'
         }
     }
 }

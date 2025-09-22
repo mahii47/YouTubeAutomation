@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven'    // Make sure Maven is configured in Jenkins
-        jdk 'JDK11'      // Make sure JDK11 is configured in Jenkins
+        jdk 'JDK11'          // Your JDK installation name in Jenkins
+        maven 'Maven'        // Your Maven installation name in Jenkins
     }
 
     stages {
@@ -25,10 +25,8 @@ pipeline {
             }
         }
 
-        stage('Archive Reports') {
+        stage('Publish Reports') {
             steps {
-                archiveArtifacts artifacts: 'target/surefire-reports/*.xml', allowEmptyArchive: true
-                archiveArtifacts artifacts: 'target/cucumber-reports/*.html', allowEmptyArchive: true
                 junit 'target/surefire-reports/*.xml'
             }
         }
@@ -36,16 +34,7 @@ pipeline {
 
     post {
         always {
-            echo "Cleaning up workspace..."
-            cleanWs()
-        }
-
-        success {
-            echo "Build and Tests Passed!"
-        }
-
-        failure {
-            echo "Build or Tests Failed!"
+            echo "Pipeline finished."
         }
     }
 }

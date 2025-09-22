@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        jdk 'JDK11'          // Your JDK installation name in Jenkins
-        maven 'Maven'        // Your Maven installation name in Jenkins
+        jdk 'JDK11'        // Your Jenkins JDK installation
+        maven 'Maven'      // Your Jenkins Maven installation
     }
 
     stages {
@@ -22,12 +22,6 @@ pipeline {
         stage('Run Tests') {
             steps {
                 sh 'mvn test'
-            }
-        }
-
-        stage('Publish Reports') {
-            steps {
-                junit 'target/surefire-reports/*.xml'
             }
         }
     }

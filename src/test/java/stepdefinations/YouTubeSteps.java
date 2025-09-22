@@ -47,7 +47,7 @@ public class YouTubeSteps extends BaseTest {
 	{
 		videoPage.muteVideo();
 	}
-//	@Then("I collect all the comments from the video")
+	@Then("I collect all the comments from the video")
 	public void comment() throws InterruptedException
 	{
 		videoPage.videosComment();

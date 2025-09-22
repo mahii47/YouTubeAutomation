@@ -1,11 +1,10 @@
-Video Title: Selenium Training | Selenium Full Course | Selenium Java Tutorial | Intellipaat
-Intellipaat
-12.3M subscribers
+Video Title: Build a Complete Selenium Java Framework (13 Hrs) | Jenkins, Docker, CI/CD & API Testing
+Automation Testing Insider
+36K subscribers
+Join
 Subscribe
-7.8K
+88
 Share
-Download
-Save
     
     
     
@@ -13,8 +12,18 @@ Save
     
     
     
-   583K views  5 years ago  #Selenium #SeleniumJava #SeleniumTraining
-?Intellipaat Selenium Training: https://intellipaat.com/selenium-trai...
-In this selenium full course tutorial you will learn end to end about selenium. So in this selenium java tutorial we have covered the concepts right from beginning so that you can start your learning with zero knowledge on selenium. …
+   1.6K views  7 days ago  HYDERABAD
+? Build a Complete Selenium Java Framework from Scratch in this 13-hour full course!  
+This masterclass covers everything from framework basics to advanced topics like Jenkins, Docker, CI/CD pipelines, API & Database Testing — all with real-world implementation. …
 ...more
+-----------------------------------
+Comments:
+ATIDigital website link: https://atidigitalhub.myinstamojo.com/
+ Complete Framework Documentation – 40% OFF (Limited Time Offer, valid till 28th September 2025): https://atidigitalhub.myinstamojo.com/product/selenium-automation-framework-build-complete?referred_from=category
+Great sir ....Hatsoff to your hard work thank you for this video
+.....
+How to build own custom web framework in java
+great sir
+Thanks
+thanks for making this video sir, one doubt - is this relevant to 2025, asking as you have used java 17 version
 -----------------------------------

@@ -1,46 +1,55 @@
 pipeline {
     agent any
 
-    tools {
-        jdk 'JDK11'      // Ensure this matches the JDK name in Jenkins
-        maven 'Maven'   // Ensure this matches the Maven name in Jenkins
-    }
-
     environment {
-        PROJECT_REPO = 'https://github.com/mahii47/YouTubeAutomation'
-        BRANCH = 'main'
+        MAVEN_HOME = tool name: 'Maven 3.9.3', type: 'maven'
+        JAVA_HOME = tool name: 'JDK 11', type: 'jdk'
+        PATH = "${MAVEN_HOME}/bin:${JAVA_HOME}/bin:${env.PATH}"
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: "${BRANCH}", url: "${PROJECT_REPO}"
+                git branch: 'main', url: 'https://github.com/mahii47/YouTubeAutomation.git'
             }
         }
 
-        stage('Build & Run Tests') {
+        stage('Build & Test') {
             steps {
-                sh 'mvn clean test'
+                script {
+                    // Run Maven clean and test
+                    sh 'mvn clean test'
+                }
             }
         }
 
-        stage('Archive Reports') {
+        stage('Archive Test Reports') {
             steps {
-                archiveArtifacts artifacts: '**/target/surefire-reports/*.xml', allowEmptyArchive: true
-                archiveArtifacts artifacts: 'YouTubeData.txt', allowEmptyArchive: true
+                script {
+                    // Make sure Cucumber TestNG generates XML reports
+                    // Path should match your CucumberOptions junit plugin
+                    junit '**/target/cucumber-reports/*.xml'
+
+                    // Archive all XML reports
+                    archiveArtifacts artifacts: '**/target/cucumber-reports/*.xml', allowEmptyArchive: true
+
+                    // Archive HTML reports as well
+                    archiveArtifacts artifacts: '**/target/cucumber-reports/*.html', allowEmptyArchive: true
+                }
             }
         }
     }
 
     post {
         always {
-            junit '**/target/surefire-reports/*.xml'
-        }
-        success {
-            echo 'Build and tests completed successfully!'
+            echo 'Cleaning up workspace...'
+            cleanWs()
         }
         failure {
             echo 'Build or tests failed!'
+        }
+        success {
+            echo 'Build and tests completed successfully!'
         }
     }
 }

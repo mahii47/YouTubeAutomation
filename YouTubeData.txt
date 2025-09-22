@@ -1,0 +1,40 @@
+Video Title: Automate Flipkart E-commerce website Using SELENIUM WEBDRIVER || JAVA + SELENIUM #flipkart #amazon
+Study Automation Academy
+12.8K subscribers
+Join
+Subscribe
+882
+Share
+    
+    
+    
+   
+    
+    
+    
+   58K views  1 year ago
+Code: https://github.com/ckjdelhi/Flipkart_...
+
+Thanks for watching the video: …
+...more
+-----------------------------------
+Comments:
+Very very great videos I have ever seen . thank you so much for this video . Keep uploading this type of videos coz this is  actually asking in interview. I have subscribed your channel. Please uploading this type of videos
+Wow, watching this feels like having a personal tutor right at my fingertips. You're making complex concepts seem so easy to understand. Kudos to you!
+Thank you so much, i was strugling to add item to cart, without this window handle.
+Do log in automation too. With press and hold
+Good 
+Very nice
+Can you please share the code if possible. Thanks
+I need full video
+Could you pls show, how to slide price sliding in flipcart.
+Have you ever managed to deploy your site to make it live
+Could you please make a video amazon ,Flipkart project for order placing request
+Thanks
+i want do data entry on website can this selenium help with that data entry's are nearly count of 1000
+It's not working..add to cart button is not clickable..
+How to automate when site is build using Shopify and want to verify cart presence
+Can you send me this code
+Could you please make video on hdfc emi form, iam facing no  such elements error, eventhough locators all correct
+I need full video
+-----------------------------------

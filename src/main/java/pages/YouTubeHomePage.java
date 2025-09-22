@@ -1,6 +1,7 @@
 package pages;
 import java.util.List;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import common.BaseTest;
@@ -43,6 +44,7 @@ public class YouTubeHomePage extends BaseTest{
 	public void playvideos(String target) throws InterruptedException
 	{    
 		Thread.sleep(5000);
+	
 	        for (int i=0;i<videoList.size();i++)
 	        {
 	        	String channel = channelNames.get(i).getText();
@@ -52,7 +54,8 @@ public class YouTubeHomePage extends BaseTest{
 	        		WebElement video = videoList.get(i);	
 	        		video.click();
 	        		break;
-	        	}  
+	        	} 
+	        	
 	        }
 	         title = waitUtils.waitForElementVisible(videoTitle).getText();
 	        System.out.println("\n========== YouTube Title ==========");
@@ -60,7 +63,6 @@ public class YouTubeHomePage extends BaseTest{
 	        System.out.println("\n===================================");
 	        
 	        FileUtils.writeTitle(title);
-	        
-	       
+		
 	 }
 }

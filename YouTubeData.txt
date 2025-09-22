@@ -1,10 +1,11 @@
-Video Title: Build a Complete Selenium Java Framework (13 Hrs) | Jenkins, Docker, CI/CD & API Testing
-Automation Testing Insider
-36K subscribers
-Join
+Video Title: What is Selenium | Selenium Explained in 2-minutes | Introduction to Selenium | Intellipaat
+Intellipaat
+12.3M subscribers
 Subscribe
-88
+1.7K
 Share
+Download
+Save
     
     
     
@@ -12,18 +13,26 @@ Share
     
     
     
-   1.6K views  7 days ago  HYDERABAD
-? Build a Complete Selenium Java Framework from Scratch in this 13-hour full course!  
-This masterclass covers everything from framework basics to advanced topics like Jenkins, Docker, CI/CD pipelines, API & Database Testing — all with real-world implementation. …
+   161K views  2 years ago  #Selenium #Intellipaat #WhatisSelenium
+?? Intellipaat's Selenium Certification Course: https://intellipaat.com/selenium-trai...
+
+? What is Selenium? …
 ...more
 -----------------------------------
 Comments:
-ATIDigital website link: https://atidigitalhub.myinstamojo.com/
- Complete Framework Documentation – 40% OFF (Limited Time Offer, valid till 28th September 2025): https://atidigitalhub.myinstamojo.com/product/selenium-automation-framework-build-complete?referred_from=category
-Great sir ....Hatsoff to your hard work thank you for this video
-.....
-How to build own custom web framework in java
-great sir
-Thanks
-thanks for making this video sir, one doubt - is this relevant to 2025, asking as you have used java 17 version
+Thanks for concise information
+Wow, very short and effective overview .. Thank you very much.
+great conent
+Good day greetings
+tnks
+Beautiful presentation! May I know, what tool have you used for making this presentation?
+THANK YOU BROTHER! CAN YOU EXPLAIN THE WEBDRIVER TO ME?
+This is my comment from Postman!
+Sir how much practice in a day is required to learn selenium
+I wish i had a pen like tht...
+Very good man
+Waw
+One like is nothing in from of your video
+This is my comment from Postman!
+This is my comment from Postman!
 -----------------------------------

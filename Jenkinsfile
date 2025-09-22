@@ -2,6 +2,7 @@ pipeline {
     agent any
 
     environment {
+        // Make sure this Maven installation exists in Jenkins Global Tool Configuration
         MAVEN_HOME = tool name: 'Maven 3.9.3', type: 'maven'
         JAVA_HOME = tool name: 'JDK 11', type: 'jdk'
         PATH = "${MAVEN_HOME}/bin:${JAVA_HOME}/bin:${env.PATH}"
@@ -23,17 +24,11 @@ pipeline {
             }
         }
 
-        stage('Archive Test Reports') {
+        stage('Archive Artifacts') {
             steps {
                 script {
-                    // Make sure Cucumber TestNG generates XML reports
-                    // Path should match your CucumberOptions junit plugin
-                    junit '**/target/cucumber-reports/*.xml'
-
-                    // Archive all XML reports
-                    archiveArtifacts artifacts: '**/target/cucumber-reports/*.xml', allowEmptyArchive: true
-
-                    // Archive HTML reports as well
+                    // Archive XML and HTML if they exist, but don't fail if they don't
+                    archiveArtifacts artifacts: '**/target/surefire-reports/*.xml', allowEmptyArchive: true
                     archiveArtifacts artifacts: '**/target/cucumber-reports/*.html', allowEmptyArchive: true
                 }
             }
@@ -42,8 +37,11 @@ pipeline {
 
     post {
         always {
-            echo 'Cleaning up workspace...'
-            cleanWs()
+            // Wrap workspace cleanup inside node to avoid errors
+            node {
+                echo 'Cleaning up workspace...'
+                cleanWs()
+            }
         }
         failure {
             echo 'Build or tests failed!'

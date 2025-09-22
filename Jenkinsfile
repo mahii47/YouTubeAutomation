@@ -7,7 +7,7 @@ pipeline {
     }
 
     environment {
-        PROJECT_REPO = 'https://github.com/mahii47/YouTubeAutomation.git'
+        PROJECT_REPO = 'https://github.com/mahii47/YouTubeAutomation'
         BRANCH = 'main'
     }
 

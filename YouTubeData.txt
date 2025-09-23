@@ -1,28 +1,24 @@
-Video Title: Software Testing Full Course In 10 Hours | Software Testing Tutorial | Edureka
+Video Title: Selenium Java Tutorial For Beginners | Automation Testing Tutorial | Selenium WebDriver | Edureka
 -----------------------------------
 Comments:
-Thanks a lot for this course. This is such a detailed explanation for the people who are beginners in software testing. Can you please share a pdf/ppt of this
-Awesome video! If possible, could you share the presentation slides to better review the content?
-Please Open caption. It's helpful to watch the videos with subtites.  
-If you want to make a career in software testing please watch this video awesome explanation....
-Hello Edureka Team Thanks alot for providing us free Course as now I am fully completed Completed your Course it's very informative, Knowledgeable and in simple words easy to understand Once angain Thanks alot for free access for your course 
-Hello Edureka Team Thanks alot for providing us free Course. Course is very informative. can you share the source code or slides of this course? Thank you 
-Thanks edureka  for great effort...It's very helpful who is starting their career as software tester...can u plz send slides
-Excellent work .. best course ever .. thanks for efforts 
-Excellent video....Great effort Edureka team....could you please share the ppt
-This was a great and detailed course! Thank you Edureka! Could you please provide ppt slides/study material?
-Hello Edureka Team Thanks a lot for providing us free Course as now I am fully completed Completed your Course it's very informative, Knowledgeable and in simple words easy to understand Once again Thanks a lot for free access for your course 
-can you guide mw how came back to the this filed because  i am working with finance compony but i want came back to my filed so please help & guide me how can i do this.
-its really very good course to learn from Youtube with Edureka. Really am thankful. 
-I have a question - I'm just started using this Video , able to understand the topics but I don't have coding knowledge , how to cover this, can. you suggest any steps or inputs for this?
-Good information shared.. Please share the notes and PPT 
-Hello edureka team. Thank you so much for your fab job towards helping us out to learn better. Could you please share the pdf or ppt of this course?
-This is great tutorial...I'm from Nigeria
-Thank you for putting up so much hardwork in this and making this video accessible for everyone. Please share the documents/ppt in the video. Thank you
-Thank u so much
-
-
-Edurekaaa
-Hello, Edureka Team. Thank you for such enormous and informative tutorial. Can you, please, share necessary study materials for me?
-Thank you so much for your all efforts to make this coarse for us , can u please share the slides
+This video is particularly good because the sample code contains all the commonly used variety of selenium commands.
+Very well explained, easy to be understood by a beginner.
+Really thank you. You helped me so much. This tutorial is very helpful. I needed selenium for my bachelor's work and your nice expressing the process is very easy to understand.
+Awesome way of explaining the scenario..Really good to watch.
+Excellent! Many Thanks . This is perfection. Master Class.
+Very helpful video. Thanks a lot
+i am from thailand
+thanks for the good teaching
+Very useful video specially for beginners. Keep the good work ON
+Amazing lecture!
+so we need selenium both ide, webdriver for testing web application right?
+That's helpful!
+This is absolutely perfect!
+thanks very much the explanation was amazing
+Super awesome guide!!!
+Clear
+Clear...
+She is really good nice!
+Amazing.
+Great Lesson...Thanks Mam
 -----------------------------------

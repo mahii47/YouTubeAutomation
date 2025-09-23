@@ -1,6 +1,4 @@
 package pages;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -45,26 +43,7 @@ public class YouTubeHomePage extends BaseTest{
 	}
 	public void playvideos(String target) throws InterruptedException
 	{    
-//		Thread.sleep(5000);
-//	
-//	        for (int i=0;i<videoList.size();i++)
-//	        {
-//	        	String channel = channelNames.get(i).getText();
-//	        	System.out.println(channel);
-//	        	if(channel.equalsIgnoreCase(target.trim()))
-//	        	{
-//	        		WebElement video = videoList.get(i);	
-//	        		video.click();
-//	        		break;
-//	        	} 
-//	        }
-//	         title = waitUtils.waitForElementVisible(videoTitle).getText();
-//	        System.out.println("\n========== YouTube Title ==========");
-//	        System.out.println("Video Title: "+title);
-//	        System.out.println("\n===================================");
-//	        
-//	        FileUtils.writeTitle(title);
-		Thread.sleep(5000); // wait for results
+		Thread.sleep(5000); 
 
 	    boolean found = false;
 
@@ -106,9 +85,4 @@ public class YouTubeHomePage extends BaseTest{
 	    if (!found) {
 	        System.out.println("Target channel not found: " + target);
 	    }}
-	    
-	   
-	    
-
 	}
-

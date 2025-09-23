@@ -52,19 +52,23 @@ public class YouTubeVideoPage extends BaseTest{
 		commentList = waitUtils.waitForComments(comment);
 		 System.out.println("\n========== YouTube Comments ==========");
 		
+		 List<String> allComments = new ArrayList<>();
 		for(int i=1;i<=commentList.size()-1;i++)
 		{
 			 commentText = commentList.get(i).getText();
 		System.out.println("Comment No:"+i+" "+commentList.get(i).getText());
-		 
+		allComments.add(commentText);
+
 		}
 		 System.out.println("\n========================================");
 		 
-		 List<String> allComments = new ArrayList<>();
-		 for (WebElement c : commentList) {
-		     allComments.add(c.getText());
-		 }
-		 FileUtils.writeComments(allComments); 
+		 FileUtils.writeComments(allComments);
+//		 
+//		 List<String> allComments = new ArrayList<>();
+//		 for (WebElement c : commentList) {
+//		     allComments.add(c.getText());
+//		 }
+//		 FileUtils.writeComments(allComments); 
 	}
 	
 	public void muteVideo()
